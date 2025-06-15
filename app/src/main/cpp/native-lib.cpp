@@ -59,7 +59,7 @@ bool MyRegisterNative(JNIEnv *env, char* className, char* methodName, char* sign
             );
         }
     }
-    start[jni_offset] = reinterpret_cast<uintptr_t>(funcptr);
+    start[jni_offset] = funcptr;
     return true;
 }
 
